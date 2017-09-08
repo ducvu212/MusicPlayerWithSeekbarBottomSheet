@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_library"
+            android:icon="@drawable/musicfolder50"
+            android:title="Library" />
+        <item
+            android:id="@+id/nav_playlist"
+            android:icon="@drawable/playlist50"
+            android:title="Playlist" />
+        <item
+            android:id="@+id/nav_playingQueue"
+            android:icon="@drawable/playfilled50"
+            android:title="Playing Queue" />
+        <item
+            android:id="@+id/nav_nowPlaying"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Now Playing" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/settings48"
+                android:title="Setting" />
+            <item
+                android:id="@+id/nav_info"
+                android:icon="@drawable/info26"
+                android:title="Help and Feelback" />
+        </menu>
+    </item>
+
+</menu>

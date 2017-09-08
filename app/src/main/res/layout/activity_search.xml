@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.SearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/iv_SearchFrag"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/search512"
+                android:tint="#ffffff" />
+
+            <EditText
+                android:id="@+id/edt_searchFrag"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Search Library"
+                android:textColor="#ffffff"
+                android:textColorHint="#dad9d9" />
+        </android.support.v7.widget.Toolbar>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_song"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_song"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:text="Songs"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+
+        <ListView
+            android:id="@+id/list_searchAct"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_artist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_song"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_Artist"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="90dp"
+            android:text="Artists"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+
+        <ListView
+            android:id="@+id/list_artistAct"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_artist"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_albumsAct"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="90dp"
+            android:text="Albums"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+
+        <ListView
+            android:id="@+id/list_albumAct"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

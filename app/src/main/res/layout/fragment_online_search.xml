@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/OnlineXML"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center_horizontal"
+        android:hint="Text to find"
+        android:textColorHint="#F06292">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edt_find"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textVisiblePassword|textNoSuggestions"
+            android:maxLines="1"
+            android:textColor="#98132f54"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:singleLine="true" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Find"
+        android:textColor="#98132f54"
+        android:textSize="20sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="150dp"
+        android:id="@+id/rcl_listMusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</FrameLayout>

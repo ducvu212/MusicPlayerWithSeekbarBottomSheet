@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.example.admin.mp3player.Fragments.PlayOnlineFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/musicplay"
+        android:layout_width="300dp"
+        android:scaleType="fitXY"
+        android:layout_height="300dp" />
+
+    <TextView
+        android:id="@+id/nameRun1"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:text="hbvsdjvbnsdfbnfm,dfm,ndffnddfn"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/artistRun1"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:text="hbvsdjvbnsdfbnfm,dfm,ndffnddfn"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginLeft="-60dp"
+            android:layout_weight="1"
+            android:src="@drawable/playlist96"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/icfavalbum"
+            android:layout_width="30dp"
+            android:layout_height="25dp" />
+
+
+        <ImageView
+            android:layout_marginRight="-55dp"
+            android:layout_weight="1"
+            android:src="@drawable/speaker96"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:progressTint="@color/colorAccent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/timeRemain1"
+            android:text="adfvsdvbds"
+            android:textColor="#ffffff"
+            android:textSize="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="180dp"
+            android:id="@+id/totalTime1"
+            android:text="adfvsdvbds"
+            android:textColor="#ffffff"
+            android:textSize="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="?attr/selectableItemBackground"
+            android:paddingLeft="-30dp"
+            android:id="@+id/shuffe"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/icplayershuffle"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <ImageView
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/prev1"
+            android:layout_weight="1"
+            android:paddingLeft="-30dp"
+            android:src="@drawable/icnotifprev"
+            android:layout_marginTop="7dp"
+            android:layout_width="30dp"
+            android:layout_height="20dp" />
+
+        <ImageView
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/play1"
+            android:layout_weight="1"
+            android:src="@drawable/icnotifpause"
+            android:layout_marginTop="0dp"
+            android:layout_width="60dp"
+            android:layout_height="35dp" />
+
+        <ImageView
+            android:background="?attr/selectableItemBackground"
+            android:layout_marginRight="0dp"
+            android:paddingRight="0dp"
+            android:id="@+id/next1"
+            android:layout_weight="1"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/icnotifnext"
+            android:layout_width="30dp"
+            android:layout_height="20dp" />
+
+        <ImageView
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/repeat"
+            android:paddingRight="-20dp"
+            android:layout_weight="1"
+            android:src="@drawable/repeat96"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

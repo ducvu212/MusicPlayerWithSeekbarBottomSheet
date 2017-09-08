@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_shuffel"
+        android:orderInCategory="100"
+        android:title="Shuffle All"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_viewAs"
+        android:orderInCategory="100"
+        android:title="View As"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_sort"
+        android:orderInCategory="100"
+        android:title="Sort By"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+</menu>
